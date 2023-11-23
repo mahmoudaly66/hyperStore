@@ -1,0 +1,2013 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>HyperStore</title>
+    <!-- ? Favicon img -->
+    <link rel="icon" href="img/Group 48096984.png" type="image" />
+    <!-- ? Favicon img-->
+
+    <!-- ? Main CSS -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/fontawesome.min.css" />
+    <!-- ? Custom CSS -->
+    <link rel="stylesheet" href="css/dataTables.bootstrap5.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <!-- ? Custom CSS -->
+    <!-- ? Main JavaScript -->
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/fontawesome.min.js"></script>
+    <!-- ? Main JavaScript -->
+    <!-- ? Custom JavaScript -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="js/charts.js"></script>
+    <script src="js/jquery.dataTables.min.js"></script>
+    <script src="js/dataTables.bootstrap5.min.js"></script>
+    <!-- ? Custom JavaScript -->
+  </head>
+  <body>
+    <!-- breadcrumb -->
+    <nav aria-label="breadcrumb" class="nav-breadcrumb">
+      <div class="container">
+        <div class="all-breadcrumb">
+          <button
+            class="btn btn-link"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasRight"
+            aria-controls="offcanvasRight"
+          >
+            <img src="img/car.png" alt="" />
+            <p>التوصيل الي <span>حدد موقعك</span></p>
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasRight"
+            aria-labelledby="offcanvasRightLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 id="offcanvasRightLabel">Offcanvas right</h5>
+              <button
+                type="button"
+                class="btn-close text-reset"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">...</div>
+          </div>
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">EGP</a></li>
+            <li class="breadcrumb-item">
+              <a href="#">English <img src="img/amirica.png" alt="" /></a>
+            </li>
+            <li class="breadcrumb-item"><a href="#">اتصل 16666</a></li>
+          </ol>
+        </div>
+      </div>
+    </nav>
+    <!-- breadcrumb -->
+
+    <!-- navbar one-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+      <div class="container">
+        <img src="img/Group 48096984.png" alt="" />
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <form class="d-flex">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="ابحث باسم المنتج ...."
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </form>
+
+          <ul class="navbar-nav me-5 mb-2 mb-lg-0">
+            <li class="nav-item">
+              <i class="fa-regular fa-circle-user"></i>
+              <a class="nav-link active" aria-current="page" href="#"
+                >تسجيل الدخول
+              </a>
+            </li>
+            <li class="nav-item">
+              <i class="fa-solid fa-cart-shopping"></i>
+              <a class="nav-link" href="#">السلة</a>
+            </li>
+            <li class="nav-item">
+              <i class="fa-regular fa-heart"></i>
+              <a class="nav-link" href="#">قائمة المفضلات</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- navbar one-->
+
+    <!-- navbar two-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <select class="form-select" aria-label="Default select example">
+            <option selected>الأصناف</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="#">المنتجات</a>
+            <a class="nav-link" href="#">قصتنا</a>
+            <a class="nav-link" href="#">المدونة</a>
+            <a class="nav-link" href="#">تواصل معنا</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- navbar two-->
+
+    <!-- start slider1 -->
+    <div class="swiper mySwiper1">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="img/slider.png" alt="" /></div>
+        <div class="swiper-slide"><img src="img/slider2.png" alt="" /></div>
+        <div class="swiper-slide"><img src="img/slider.png" alt="" /></div>
+        <div class="swiper-slide"><img src="img/slider2.png" alt="" /></div>
+      </div>
+    </div>
+    <!-- end slider2 -->
+
+    <!-- Shop-sections and slider2-->
+    <div class="Shop-sections">
+      <div class="container">
+        <div class="swiper mySwiper2">
+          <div class="secions-title">
+            <h1>تســــــــــــوق الأقسام</h1>
+          </div>
+
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="row">
+                <div class="shopping-cards">
+                  <div class="shopping-card">
+                    <img src="img/fruits.png" alt="" />
+                    <h6>المنتجات الغذائية</h6>
+                    <p>250 منتج</p>
+                  </div>
+                  <div class="shopping-card">
+                    <img src="img/1.png" alt="" />
+                    <h6>منتجات المنزل</h6>
+                    <p>250 منتج</p>
+                  </div>
+                  <div class="shopping-card">
+                    <img src="img/2.png" alt="" />
+                    <h6>الالكترونيات</h6>
+                    <p>250 منتج</p>
+                  </div>
+                  <div class="shopping-card">
+                    <img src="img/3.png" alt="" />
+                    <h6>الاكسسورارت</h6>
+                    <p>250 منتج</p>
+                  </div>
+                  <div class="shopping-card">
+                    <img src="img/4.png" alt="" />
+                    <h6>منتجات الجمال</h6>
+                    <p>250 منتج</p>
+                  </div>
+                  <div class="shopping-card">
+                    <img src="img/5.png" alt="" />
+                    <h6>حقائب و أحذية</h6>
+                    <p>250 منتج</p>
+                  </div>
+                  <div class="shopping-card">
+                    <img src="img/6.png" alt="" />
+                    <h6>الأزياء و الموضة</h6>
+                    <p>250 منتج</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="row">
+                <div class="shopping-cards">
+                  <div class="shopping-card">
+                    <img src="img/fruits.png" alt="" />
+                    <h6>المنتجات الغذائية</h6>
+                    <p>250 منتج</p>
+                  </div>
+                  <div class="shopping-card">
+                    <img src="img/1.png" alt="" />
+                    <h6>منتجات المنزل</h6>
+                    <p>250 منتج</p>
+                  </div>
+                  <div class="shopping-card">
+                    <img src="img/2.png" alt="" />
+                    <h6>الالكترونيات</h6>
+                    <p>250 منتج</p>
+                  </div>
+                  <div class="shopping-card">
+                    <img src="img/3.png" alt="" />
+                    <h6>الاكسسورارت</h6>
+                    <p>250 منتج</p>
+                  </div>
+                  <div class="shopping-card">
+                    <img src="img/4.png" alt="" />
+                    <h6>منتجات الجمال</h6>
+                    <p>250 منتج</p>
+                  </div>
+                  <div class="shopping-card">
+                    <img src="img/5.png" alt="" />
+                    <h6>حقائب و أحذية</h6>
+                    <p>250 منتج</p>
+                  </div>
+                  <div class="shopping-card">
+                    <img src="img/6.png" alt="" />
+                    <h6>الأزياء و الموضة</h6>
+                    <p>250 منتج</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next">
+            <i class="fa-solid fa-arrow-left"></i>
+          </div>
+          <div class="swiper-button-prev">
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Shop-sections and slider2-->
+
+    <!-- Today's offers -->
+    <div class="Todays-offers">
+      <div class="container">
+        <div class="row">
+          <div class="offer">
+            <h1>عروض اليوم</h1>
+          </div>
+          <div class="offer-img">
+            <div class="offer-img-one">
+              <a href="#"> <img src="img/offer.png" alt="" /></a>
+            </div>
+            <div class="offer-img-two">
+              <a href="#"> <img src="img/offer2.png" alt="" /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Today's offers -->
+
+    <!-- products -->
+    <div class="products">
+      <div class="container">
+        <div class="row">
+          <div class="title-prodect">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+              <div class="title">
+                <h1>منتجــــــــــــاتنا</h1>
+              </div>
+
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link active"
+                  id="home-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#home"
+                  type="button"
+                  role="tab"
+                  aria-controls="home"
+                  aria-selected="true"
+                >
+                  دينا فارم
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="profile-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#profile"
+                  type="button"
+                  role="tab"
+                  aria-controls="profile"
+                  aria-selected="false"
+                >
+                  Flavour
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="contact-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#contact"
+                  type="button"
+                  role="tab"
+                  aria-controls="contact"
+                  aria-selected="false"
+                >
+                  المراعي
+                </button>
+              </li>
+
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="pageone-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#pageone"
+                  type="button"
+                  role="tab"
+                  aria-controls="pageone"
+                  aria-selected="false"
+                >
+                  بريزيدنت
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="pagetwo-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#pagetwo"
+                  type="button"
+                  role="tab"
+                  aria-controls="pagetwo"
+                  aria-selected="false"
+                >
+                  جهينة
+                </button>
+              </li>
+
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="pagethree-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#pagethree"
+                  type="button"
+                  role="tab"
+                  aria-controls="pagethree"
+                  aria-selected="false"
+                >
+                  بست
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="pagefour-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#pagefour"
+                  type="button"
+                  role="tab"
+                  aria-controls="pagefour"
+                  aria-selected="false"
+                >
+                  كل الأصناف
+                </button>
+              </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+              <div
+                class="tab-pane fade show active"
+                id="home"
+                role="tabpanel"
+                aria-labelledby="home-tab"
+              >
+                <div class="row">
+                  <div class="col-lg-3 col-md-4 col-6">
+                    <div class="card-prodect">
+                      <div class="head-card">
+                        <h4>دينا فارم</h4>
+                        <i class="fa-regular fa-heart"></i>
+                      </div>
+                      <div class="img">
+                        <img src="img/card2.png" alt="" />
+                      </div>
+                      <div class="price-prodect">
+                        <h4>40.30 ر.س</h4>
+                        <div class="evaluation">
+                          <i class="fa-solid fa-star"></i>
+                          <p>4.0</p>
+                        </div>
+                      </div>
+                      <div class="discripe-product">
+                        <h4>
+                          كرتونة من المانجو معبأة بطريقة صحيحة للحفاظ عليها
+                        </h4>
+                        <p>
+                          50 جرام مانجو سيكو المواصفات نبات صيني بدون سكر عضوي
+                          مجمد
+                        </p>
+                      </div>
+                      <div class="btn-card">
+                        <button type="button" class="btn btn-success">
+                          <i class="fa-solid fa-cart-shopping"></i>
+                          أضف الى السلة
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-6">
+                    <div class="card-prodect">
+                      <div class="head-card">
+                        <h4>دينا فارم</h4>
+                        <i class="fa-regular fa-heart"></i>
+                      </div>
+                      <div class="img">
+                        <img src="img/card3.png" alt="" />
+                      </div>
+                      <div class="price-prodect">
+                        <h4>40.30 ر.س</h4>
+                        <div class="evaluation">
+                          <i class="fa-solid fa-star"></i>
+                          <p>4.0</p>
+                        </div>
+                      </div>
+                      <div class="discripe-product">
+                        <h4>
+                          كرتونة من المانجو معبأة بطريقة صحيحة للحفاظ عليها
+                        </h4>
+                        <p>
+                          50 جرام مانجو سيكو المواصفات نبات صيني بدون سكر عضوي
+                          مجمد
+                        </p>
+                      </div>
+                      <div class="btn-card">
+                        <button type="button" class="btn btn-success">
+                          <i class="fa-solid fa-cart-shopping"></i>
+                          أضف الى السلة
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-6">
+                    <div class="card-prodect">
+                      <div class="head-card">
+                        <h4>دينا فارم</h4>
+                        <i class="fa-regular fa-heart"></i>
+                      </div>
+                      <div class="img">
+                        <img src="img/card4.png" alt="" />
+                      </div>
+                      <div class="price-prodect">
+                        <h4>40.30 ر.س</h4>
+                        <div class="evaluation">
+                          <i class="fa-solid fa-star"></i>
+                          <p>4.0</p>
+                        </div>
+                      </div>
+                      <div class="discripe-product">
+                        <h4>
+                          كرتونة من المانجو معبأة بطريقة صحيحة للحفاظ عليها
+                        </h4>
+                        <p>
+                          50 جرام مانجو سيكو المواصفات نبات صيني بدون سكر عضوي
+                          مجمد
+                        </p>
+                      </div>
+                      <div class="btn-card">
+                        <button type="button" class="btn btn-success">
+                          <i class="fa-solid fa-cart-shopping"></i>
+                          أضف الى السلة
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-6">
+                    <div class="card-prodect">
+                      <div class="head-card">
+                        <h4>دينا فارم</h4>
+                        <i class="fa-regular fa-heart"></i>
+                      </div>
+                      <div class="img">
+                        <img src="img/card5.png" alt="" />
+                      </div>
+                      <div class="price-prodect">
+                        <h4>40.30 ر.س</h4>
+                        <div class="evaluation">
+                          <i class="fa-solid fa-star"></i>
+                          <p>4.0</p>
+                        </div>
+                      </div>
+                      <div class="discripe-product">
+                        <h4>
+                          كرتونة من المانجو معبأة بطريقة صحيحة للحفاظ عليها
+                        </h4>
+                        <p>
+                          50 جرام مانجو سيكو المواصفات نبات صيني بدون سكر عضوي
+                          مجمد
+                        </p>
+                      </div>
+                      <div class="btn-card">
+                        <button type="button" class="btn btn-success">
+                          <i class="fa-solid fa-cart-shopping"></i>
+                          أضف الى السلة
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-6">
+                    <div class="card-prodect">
+                      <div class="head-card">
+                        <h4>دينا فارم</h4>
+                        <i class="fa-regular fa-heart"></i>
+                      </div>
+                      <div class="img">
+                        <img src="img/card6.png" alt="" />
+                      </div>
+                      <div class="price-prodect">
+                        <h4>40.30 ر.س</h4>
+                        <div class="evaluation">
+                          <i class="fa-solid fa-star"></i>
+                          <p>4.0</p>
+                        </div>
+                      </div>
+                      <div class="discripe-product">
+                        <h4>
+                          كرتونة من المانجو معبأة بطريقة صحيحة للحفاظ عليها
+                        </h4>
+                        <p>
+                          50 جرام مانجو سيكو المواصفات نبات صيني بدون سكر عضوي
+                          مجمد
+                        </p>
+                      </div>
+                      <div class="btn-card">
+                        <button type="button" class="btn btn-success">
+                          <i class="fa-solid fa-cart-shopping"></i>
+                          أضف الى السلة
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-6">
+                    <div class="card-prodect">
+                      <div class="head-card">
+                        <h4>دينا فارم</h4>
+                        <i class="fa-regular fa-heart"></i>
+                      </div>
+                      <div class="img">
+                        <img src="img/card7.png" alt="" />
+                      </div>
+                      <div class="price-prodect">
+                        <h4>40.30 ر.س</h4>
+                        <div class="evaluation">
+                          <i class="fa-solid fa-star"></i>
+                          <p>4.0</p>
+                        </div>
+                      </div>
+                      <div class="discripe-product">
+                        <h4>
+                          كرتونة من المانجو معبأة بطريقة صحيحة للحفاظ عليها
+                        </h4>
+                        <p>
+                          50 جرام مانجو سيكو المواصفات نبات صيني بدون سكر عضوي
+                          مجمد
+                        </p>
+                      </div>
+                      <div class="btn-card">
+                        <button type="button" class="btn btn-success">
+                          <i class="fa-solid fa-cart-shopping"></i>
+                          أضف الى السلة
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-6">
+                    <div class="card-prodect">
+                      <div class="head-card">
+                        <h4>دينا فارم</h4>
+                        <i class="fa-regular fa-heart"></i>
+                      </div>
+                      <div class="img">
+                        <img src="img/card8.png" alt="" />
+                      </div>
+                      <div class="price-prodect">
+                        <h4>40.30 ر.س</h4>
+                        <div class="evaluation">
+                          <i class="fa-solid fa-star"></i>
+                          <p>4.0</p>
+                        </div>
+                      </div>
+                      <div class="discripe-product">
+                        <h4>
+                          كرتونة من المانجو معبأة بطريقة صحيحة للحفاظ عليها
+                        </h4>
+                        <p>
+                          50 جرام مانجو سيكو المواصفات نبات صيني بدون سكر عضوي
+                          مجمد
+                        </p>
+                      </div>
+                      <div class="btn-card">
+                        <button type="button" class="btn btn-success">
+                          <i class="fa-solid fa-cart-shopping"></i>
+                          أضف الى السلة
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-6">
+                    <div class="card-prodect">
+                      <div class="head-card">
+                        <h4>دينا فارم</h4>
+                        <i class="fa-regular fa-heart"></i>
+                      </div>
+                      <div class="img">
+                        <img src="img/card1.png" alt="" />
+                      </div>
+                      <div class="price-prodect">
+                        <h4>40.30 ر.س</h4>
+                        <div class="evaluation">
+                          <i class="fa-solid fa-star"></i>
+                          <p>4.0</p>
+                        </div>
+                      </div>
+                      <div class="discripe-product">
+                        <h4>
+                          كرتونة من المانجو معبأة بطريقة صحيحة للحفاظ عليها
+                        </h4>
+                        <p>
+                          50 جرام مانجو سيكو المواصفات نبات صيني بدون سكر عضوي
+                          مجمد
+                        </p>
+                      </div>
+                      <div class="btn-card">
+                        <button type="button" class="btn btn-success">
+                          <i class="fa-solid fa-cart-shopping"></i>
+                          أضف الى السلة
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-6">
+                    <div class="card-prodect">
+                      <div class="head-card">
+                        <h4>دينا فارم</h4>
+                        <i class="fa-regular fa-heart"></i>
+                      </div>
+                      <div class="img">
+                        <img src="img/card6.png" alt="" />
+                      </div>
+                      <div class="price-prodect">
+                        <h4>40.30 ر.س</h4>
+                        <div class="evaluation">
+                          <i class="fa-solid fa-star"></i>
+                          <p>4.0</p>
+                        </div>
+                      </div>
+                      <div class="discripe-product">
+                        <h4>
+                          كرتونة من المانجو معبأة بطريقة صحيحة للحفاظ عليها
+                        </h4>
+                        <p>
+                          50 جرام مانجو سيكو المواصفات نبات صيني بدون سكر عضوي
+                          مجمد
+                        </p>
+                      </div>
+                      <div class="btn-card">
+                        <button type="button" class="btn btn-success">
+                          <i class="fa-solid fa-cart-shopping"></i>
+                          أضف الى السلة
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-6">
+                    <div class="card-prodect">
+                      <div class="head-card">
+                        <h4>دينا فارم</h4>
+                        <i class="fa-regular fa-heart"></i>
+                      </div>
+                      <div class="img">
+                        <img src="img/card7.png" alt="" />
+                      </div>
+                      <div class="price-prodect">
+                        <h4>40.30 ر.س</h4>
+                        <div class="evaluation">
+                          <i class="fa-solid fa-star"></i>
+                          <p>4.0</p>
+                        </div>
+                      </div>
+                      <div class="discripe-product">
+                        <h4>
+                          كرتونة من المانجو معبأة بطريقة صحيحة للحفاظ عليها
+                        </h4>
+                        <p>
+                          50 جرام مانجو سيكو المواصفات نبات صيني بدون سكر عضوي
+                          مجمد
+                        </p>
+                      </div>
+                      <div class="btn-card">
+                        <button type="button" class="btn btn-success">
+                          <i class="fa-solid fa-cart-shopping"></i>
+                          أضف الى السلة
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-6">
+                    <div class="card-prodect">
+                      <div class="head-card">
+                        <h4>دينا فارم</h4>
+                        <i class="fa-regular fa-heart"></i>
+                      </div>
+                      <div class="img">
+                        <img src="img/card8.png" alt="" />
+                      </div>
+                      <div class="price-prodect">
+                        <h4>40.30 ر.س</h4>
+                        <div class="evaluation">
+                          <i class="fa-solid fa-star"></i>
+                          <p>4.0</p>
+                        </div>
+                      </div>
+                      <div class="discripe-product">
+                        <h4>
+                          كرتونة من المانجو معبأة بطريقة صحيحة للحفاظ عليها
+                        </h4>
+                        <p>
+                          50 جرام مانجو سيكو المواصفات نبات صيني بدون سكر عضوي
+                          مجمد
+                        </p>
+                      </div>
+                      <div class="btn-card">
+                        <button type="button" class="btn btn-success">
+                          <i class="fa-solid fa-cart-shopping"></i>
+                          أضف الى السلة
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-6">
+                    <div class="card-prodect">
+                      <div class="head-card">
+                        <h4>دينا فارم</h4>
+                        <i class="fa-regular fa-heart"></i>
+                      </div>
+                      <div class="img">
+                        <img src="img/card1.png" alt="" />
+                      </div>
+                      <div class="price-prodect">
+                        <h4>40.30 ر.س</h4>
+                        <div class="evaluation">
+                          <i class="fa-solid fa-star"></i>
+                          <p>4.0</p>
+                        </div>
+                      </div>
+                      <div class="discripe-product">
+                        <h4>
+                          كرتونة من المانجو معبأة بطريقة صحيحة للحفاظ عليها
+                        </h4>
+                        <p>
+                          50 جرام مانجو سيكو المواصفات نبات صيني بدون سكر عضوي
+                          مجمد
+                        </p>
+                      </div>
+                      <div class="btn-card">
+                        <button type="button" class="btn btn-success">
+                          <i class="fa-solid fa-cart-shopping"></i>
+                          أضف الى السلة
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="profile"
+                role="tabpanel"
+                aria-labelledby="profile-tab"
+              >
+                <div class="row">
+                  <div class="col-lg-3 col-md-4 col-6">
+                    <div class="card-prodect">
+                      <div class="head-card">
+                        <h4>دينا فارم</h4>
+                        <i class="fa-regular fa-heart"></i>
+                      </div>
+                      <div class="img">
+                        <img src="img/card2.png" alt="" />
+                      </div>
+                      <div class="price-prodect">
+                        <h4>40.30 ر.س</h4>
+                        <div class="evaluation">
+                          <i class="fa-solid fa-star"></i>
+                          <p>4.0</p>
+                        </div>
+                      </div>
+                      <div class="discripe-product">
+                        <h4>
+                          كرتونة من المانجو معبأة بطريقة صحيحة للحفاظ عليها
+                        </h4>
+                        <p>
+                          50 جرام مانجو سيكو المواصفات نبات صيني بدون سكر عضوي
+                          مجمد
+                        </p>
+                      </div>
+                      <div class="btn-card">
+                        <button type="button" class="btn btn-success">
+                          <i class="fa-solid fa-cart-shopping"></i>
+                          أضف الى السلة
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-6">
+                    <div class="card-prodect">
+                      <div class="head-card">
+                        <h4>دينا فارم</h4>
+                        <i class="fa-regular fa-heart"></i>
+                      </div>
+                      <div class="img">
+                        <img src="img/card3.png" alt="" />
+                      </div>
+                      <div class="price-prodect">
+                        <h4>40.30 ر.س</h4>
+                        <div class="evaluation">
+                          <i class="fa-solid fa-star"></i>
+                          <p>4.0</p>
+                        </div>
+                      </div>
+                      <div class="discripe-product">
+                        <h4>
+                          كرتونة من المانجو معبأة بطريقة صحيحة للحفاظ عليها
+                        </h4>
+                        <p>
+                          50 جرام مانجو سيكو المواصفات نبات صيني بدون سكر عضوي
+                          مجمد
+                        </p>
+                      </div>
+                      <div class="btn-card">
+                        <button type="button" class="btn btn-success">
+                          <i class="fa-solid fa-cart-shopping"></i>
+                          أضف الى السلة
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-6">
+                    <div class="card-prodect">
+                      <div class="head-card">
+                        <h4>دينا فارم</h4>
+                        <i class="fa-regular fa-heart"></i>
+                      </div>
+                      <div class="img">
+                        <img src="img/card4.png" alt="" />
+                      </div>
+                      <div class="price-prodect">
+                        <h4>40.30 ر.س</h4>
+                        <div class="evaluation">
+                          <i class="fa-solid fa-star"></i>
+                          <p>4.0</p>
+                        </div>
+                      </div>
+                      <div class="discripe-product">
+                        <h4>
+                          كرتونة من المانجو معبأة بطريقة صحيحة للحفاظ عليها
+                        </h4>
+                        <p>
+                          50 جرام مانجو سيكو المواصفات نبات صيني بدون سكر عضوي
+                          مجمد
+                        </p>
+                      </div>
+                      <div class="btn-card">
+                        <button type="button" class="btn btn-success">
+                          <i class="fa-solid fa-cart-shopping"></i>
+                          أضف الى السلة
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-6">
+                    <div class="card-prodect">
+                      <div class="head-card">
+                        <h4>دينا فارم</h4>
+                        <i class="fa-regular fa-heart"></i>
+                      </div>
+                      <div class="img">
+                        <img src="img/card5.png" alt="" />
+                      </div>
+                      <div class="price-prodect">
+                        <h4>40.30 ر.س</h4>
+                        <div class="evaluation">
+                          <i class="fa-solid fa-star"></i>
+                          <p>4.0</p>
+                        </div>
+                      </div>
+                      <div class="discripe-product">
+                        <h4>
+                          كرتونة من المانجو معبأة بطريقة صحيحة للحفاظ عليها
+                        </h4>
+                        <p>
+                          50 جرام مانجو سيكو المواصفات نبات صيني بدون سكر عضوي
+                          مجمد
+                        </p>
+                      </div>
+                      <div class="btn-card">
+                        <button type="button" class="btn btn-success">
+                          <i class="fa-solid fa-cart-shopping"></i>
+                          أضف الى السلة
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="contact"
+                role="tabpanel"
+                aria-labelledby="contact-tab"
+              >
+                <div class="row">
+                  <div class="col-lg-3 col-md-4 col-6">
+                    <div class="card-prodect">
+                      <div class="head-card">
+                        <h4>دينا فارم</h4>
+                        <i class="fa-regular fa-heart"></i>
+                      </div>
+                      <div class="img">
+                        <img src="img/card2.png" alt="" />
+                      </div>
+                      <div class="price-prodect">
+                        <h4>40.30 ر.س</h4>
+                        <div class="evaluation">
+                          <i class="fa-solid fa-star"></i>
+                          <p>4.0</p>
+                        </div>
+                      </div>
+                      <div class="discripe-product">
+                        <h4>
+                          كرتونة من المانجو معبأة بطريقة صحيحة للحفاظ عليها
+                        </h4>
+                        <p>
+                          50 جرام مانجو سيكو المواصفات نبات صيني بدون سكر عضوي
+                          مجمد
+                        </p>
+                      </div>
+                      <div class="btn-card">
+                        <button type="button" class="btn btn-success">
+                          <i class="fa-solid fa-cart-shopping"></i>
+                          أضف الى السلة
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-6">
+                    <div class="card-prodect">
+                      <div class="head-card">
+                        <h4>دينا فارم</h4>
+                        <i class="fa-regular fa-heart"></i>
+                      </div>
+                      <div class="img">
+                        <img src="img/card3.png" alt="" />
+                      </div>
+                      <div class="price-prodect">
+                        <h4>40.30 ر.س</h4>
+                        <div class="evaluation">
+                          <i class="fa-solid fa-star"></i>
+                          <p>4.0</p>
+                        </div>
+                      </div>
+                      <div class="discripe-product">
+                        <h4>
+                          كرتونة من المانجو معبأة بطريقة صحيحة للحفاظ عليها
+                        </h4>
+                        <p>
+                          50 جرام مانجو سيكو المواصفات نبات صيني بدون سكر عضوي
+                          مجمد
+                        </p>
+                      </div>
+                      <div class="btn-card">
+                        <button type="button" class="btn btn-success">
+                          <i class="fa-solid fa-cart-shopping"></i>
+                          أضف الى السلة
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-6">
+                    <div class="card-prodect">
+                      <div class="head-card">
+                        <h4>دينا فارم</h4>
+                        <i class="fa-regular fa-heart"></i>
+                      </div>
+                      <div class="img">
+                        <img src="img/card4.png" alt="" />
+                      </div>
+                      <div class="price-prodect">
+                        <h4>40.30 ر.س</h4>
+                        <div class="evaluation">
+                          <i class="fa-solid fa-star"></i>
+                          <p>4.0</p>
+                        </div>
+                      </div>
+                      <div class="discripe-product">
+                        <h4>
+                          كرتونة من المانجو معبأة بطريقة صحيحة للحفاظ عليها
+                        </h4>
+                        <p>
+                          50 جرام مانجو سيكو المواصفات نبات صيني بدون سكر عضوي
+                          مجمد
+                        </p>
+                      </div>
+                      <div class="btn-card">
+                        <button type="button" class="btn btn-success">
+                          <i class="fa-solid fa-cart-shopping"></i>
+                          أضف الى السلة
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-6">
+                    <div class="card-prodect">
+                      <div class="head-card">
+                        <h4>دينا فارم</h4>
+                        <i class="fa-regular fa-heart"></i>
+                      </div>
+                      <div class="img">
+                        <img src="img/card5.png" alt="" />
+                      </div>
+                      <div class="price-prodect">
+                        <h4>40.30 ر.س</h4>
+                        <div class="evaluation">
+                          <i class="fa-solid fa-star"></i>
+                          <p>4.0</p>
+                        </div>
+                      </div>
+                      <div class="discripe-product">
+                        <h4>
+                          كرتونة من المانجو معبأة بطريقة صحيحة للحفاظ عليها
+                        </h4>
+                        <p>
+                          50 جرام مانجو سيكو المواصفات نبات صيني بدون سكر عضوي
+                          مجمد
+                        </p>
+                      </div>
+                      <div class="btn-card">
+                        <button type="button" class="btn btn-success">
+                          <i class="fa-solid fa-cart-shopping"></i>
+                          أضف الى السلة
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="tab-pane fade"
+                id="pageone"
+                role="tabpanel"
+                aria-labelledby="pageone-tab"
+              >
+                <div class="row">
+                  <div class="col-lg-3 col-md-4 col-6">
+                    <div class="card-prodect">
+                      <div class="head-card">
+                        <h4>دينا فارم</h4>
+                        <i class="fa-regular fa-heart"></i>
+                      </div>
+                      <div class="img">
+                        <img src="img/card2.png" alt="" />
+                      </div>
+                      <div class="price-prodect">
+                        <h4>40.30 ر.س</h4>
+                        <div class="evaluation">
+                          <i class="fa-solid fa-star"></i>
+                          <p>4.0</p>
+                        </div>
+                      </div>
+                      <div class="discripe-product">
+                        <h4>
+                          كرتونة من المانجو معبأة بطريقة صحيحة للحفاظ عليها
+                        </h4>
+                        <p>
+                          50 جرام مانجو سيكو المواصفات نبات صيني بدون سكر عضوي
+                          مجمد
+                        </p>
+                      </div>
+                      <div class="btn-card">
+                        <button type="button" class="btn btn-success">
+                          <i class="fa-solid fa-cart-shopping"></i>
+                          أضف الى السلة
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-6">
+                    <div class="card-prodect">
+                      <div class="head-card">
+                        <h4>دينا فارم</h4>
+                        <i class="fa-regular fa-heart"></i>
+                      </div>
+                      <div class="img">
+                        <img src="img/card3.png" alt="" />
+                      </div>
+                      <div class="price-prodect">
+                        <h4>40.30 ر.س</h4>
+                        <div class="evaluation">
+                          <i class="fa-solid fa-star"></i>
+                          <p>4.0</p>
+                        </div>
+                      </div>
+                      <div class="discripe-product">
+                        <h4>
+                          كرتونة من المانجو معبأة بطريقة صحيحة للحفاظ عليها
+                        </h4>
+                        <p>
+                          50 جرام مانجو سيكو المواصفات نبات صيني بدون سكر عضوي
+                          مجمد
+                        </p>
+                      </div>
+                      <div class="btn-card">
+                        <button type="button" class="btn btn-success">
+                          <i class="fa-solid fa-cart-shopping"></i>
+                          أضف الى السلة
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-6">
+                    <div class="card-prodect">
+                      <div class="head-card">
+                        <h4>دينا فارم</h4>
+                        <i class="fa-regular fa-heart"></i>
+                      </div>
+                      <div class="img">
+                        <img src="img/card4.png" alt="" />
+                      </div>
+                      <div class="price-prodect">
+                        <h4>40.30 ر.س</h4>
+                        <div class="evaluation">
+                          <i class="fa-solid fa-star"></i>
+                          <p>4.0</p>
+                        </div>
+                      </div>
+                      <div class="discripe-product">
+                        <h4>
+                          كرتونة من المانجو معبأة بطريقة صحيحة للحفاظ عليها
+                        </h4>
+                        <p>
+                          50 جرام مانجو سيكو المواصفات نبات صيني بدون سكر عضوي
+                          مجمد
+                        </p>
+                      </div>
+                      <div class="btn-card">
+                        <button type="button" class="btn btn-success">
+                          <i class="fa-solid fa-cart-shopping"></i>
+                          أضف الى السلة
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-6">
+                    <div class="card-prodect">
+                      <div class="head-card">
+                        <h4>دينا فارم</h4>
+                        <i class="fa-regular fa-heart"></i>
+                      </div>
+                      <div class="img">
+                        <img src="img/card5.png" alt="" />
+                      </div>
+                      <div class="price-prodect">
+                        <h4>40.30 ر.س</h4>
+                        <div class="evaluation">
+                          <i class="fa-solid fa-star"></i>
+                          <p>4.0</p>
+                        </div>
+                      </div>
+                      <div class="discripe-product">
+                        <h4>
+                          كرتونة من المانجو معبأة بطريقة صحيحة للحفاظ عليها
+                        </h4>
+                        <p>
+                          50 جرام مانجو سيكو المواصفات نبات صيني بدون سكر عضوي
+                          مجمد
+                        </p>
+                      </div>
+                      <div class="btn-card">
+                        <button type="button" class="btn btn-success">
+                          <i class="fa-solid fa-cart-shopping"></i>
+                          أضف الى السلة
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="pagetwo"
+                role="tabpanel"
+                aria-labelledby="pagetwo-tab"
+              >
+                <div class="row">
+                  <div class="col-lg-3 col-md-4 col-6">
+                    <div class="card-prodect">
+                      <div class="head-card">
+                        <h4>دينا فارم</h4>
+                        <i class="fa-regular fa-heart"></i>
+                      </div>
+                      <div class="img">
+                        <img src="img/card2.png" alt="" />
+                      </div>
+                      <div class="price-prodect">
+                        <h4>40.30 ر.س</h4>
+                        <div class="evaluation">
+                          <i class="fa-solid fa-star"></i>
+                          <p>4.0</p>
+                        </div>
+                      </div>
+                      <div class="discripe-product">
+                        <h4>
+                          كرتونة من المانجو معبأة بطريقة صحيحة للحفاظ عليها
+                        </h4>
+                        <p>
+                          50 جرام مانجو سيكو المواصفات نبات صيني بدون سكر عضوي
+                          مجمد
+                        </p>
+                      </div>
+                      <div class="btn-card">
+                        <button type="button" class="btn btn-success">
+                          <i class="fa-solid fa-cart-shopping"></i>
+                          أضف الى السلة
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-6">
+                    <div class="card-prodect">
+                      <div class="head-card">
+                        <h4>دينا فارم</h4>
+                        <i class="fa-regular fa-heart"></i>
+                      </div>
+                      <div class="img">
+                        <img src="img/card3.png" alt="" />
+                      </div>
+                      <div class="price-prodect">
+                        <h4>40.30 ر.س</h4>
+                        <div class="evaluation">
+                          <i class="fa-solid fa-star"></i>
+                          <p>4.0</p>
+                        </div>
+                      </div>
+                      <div class="discripe-product">
+                        <h4>
+                          كرتونة من المانجو معبأة بطريقة صحيحة للحفاظ عليها
+                        </h4>
+                        <p>
+                          50 جرام مانجو سيكو المواصفات نبات صيني بدون سكر عضوي
+                          مجمد
+                        </p>
+                      </div>
+                      <div class="btn-card">
+                        <button type="button" class="btn btn-success">
+                          <i class="fa-solid fa-cart-shopping"></i>
+                          أضف الى السلة
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-6">
+                    <div class="card-prodect">
+                      <div class="head-card">
+                        <h4>دينا فارم</h4>
+                        <i class="fa-regular fa-heart"></i>
+                      </div>
+                      <div class="img">
+                        <img src="img/card4.png" alt="" />
+                      </div>
+                      <div class="price-prodect">
+                        <h4>40.30 ر.س</h4>
+                        <div class="evaluation">
+                          <i class="fa-solid fa-star"></i>
+                          <p>4.0</p>
+                        </div>
+                      </div>
+                      <div class="discripe-product">
+                        <h4>
+                          كرتونة من المانجو معبأة بطريقة صحيحة للحفاظ عليها
+                        </h4>
+                        <p>
+                          50 جرام مانجو سيكو المواصفات نبات صيني بدون سكر عضوي
+                          مجمد
+                        </p>
+                      </div>
+                      <div class="btn-card">
+                        <button type="button" class="btn btn-success">
+                          <i class="fa-solid fa-cart-shopping"></i>
+                          أضف الى السلة
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-6">
+                    <div class="card-prodect">
+                      <div class="head-card">
+                        <h4>دينا فارم</h4>
+                        <i class="fa-regular fa-heart"></i>
+                      </div>
+                      <div class="img">
+                        <img src="img/card5.png" alt="" />
+                      </div>
+                      <div class="price-prodect">
+                        <h4>40.30 ر.س</h4>
+                        <div class="evaluation">
+                          <i class="fa-solid fa-star"></i>
+                          <p>4.0</p>
+                        </div>
+                      </div>
+                      <div class="discripe-product">
+                        <h4>
+                          كرتونة من المانجو معبأة بطريقة صحيحة للحفاظ عليها
+                        </h4>
+                        <p>
+                          50 جرام مانجو سيكو المواصفات نبات صيني بدون سكر عضوي
+                          مجمد
+                        </p>
+                      </div>
+                      <div class="btn-card">
+                        <button type="button" class="btn btn-success">
+                          <i class="fa-solid fa-cart-shopping"></i>
+                          أضف الى السلة
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="tab-pane fade"
+                id="pagethree"
+                role="tabpanel"
+                aria-labelledby="pagethree-tab"
+              >
+                <div class="row">
+                  <div class="col-lg-3 col-md-4 col-6">
+                    <div class="card-prodect">
+                      <div class="head-card">
+                        <h4>دينا فارم</h4>
+                        <i class="fa-regular fa-heart"></i>
+                      </div>
+                      <div class="img">
+                        <img src="img/card2.png" alt="" />
+                      </div>
+                      <div class="price-prodect">
+                        <h4>40.30 ر.س</h4>
+                        <div class="evaluation">
+                          <i class="fa-solid fa-star"></i>
+                          <p>4.0</p>
+                        </div>
+                      </div>
+                      <div class="discripe-product">
+                        <h4>
+                          كرتونة من المانجو معبأة بطريقة صحيحة للحفاظ عليها
+                        </h4>
+                        <p>
+                          50 جرام مانجو سيكو المواصفات نبات صيني بدون سكر عضوي
+                          مجمد
+                        </p>
+                      </div>
+                      <div class="btn-card">
+                        <button type="button" class="btn btn-success">
+                          <i class="fa-solid fa-cart-shopping"></i>
+                          أضف الى السلة
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-6">
+                    <div class="card-prodect">
+                      <div class="head-card">
+                        <h4>دينا فارم</h4>
+                        <i class="fa-regular fa-heart"></i>
+                      </div>
+                      <div class="img">
+                        <img src="img/card3.png" alt="" />
+                      </div>
+                      <div class="price-prodect">
+                        <h4>40.30 ر.س</h4>
+                        <div class="evaluation">
+                          <i class="fa-solid fa-star"></i>
+                          <p>4.0</p>
+                        </div>
+                      </div>
+                      <div class="discripe-product">
+                        <h4>
+                          كرتونة من المانجو معبأة بطريقة صحيحة للحفاظ عليها
+                        </h4>
+                        <p>
+                          50 جرام مانجو سيكو المواصفات نبات صيني بدون سكر عضوي
+                          مجمد
+                        </p>
+                      </div>
+                      <div class="btn-card">
+                        <button type="button" class="btn btn-success">
+                          <i class="fa-solid fa-cart-shopping"></i>
+                          أضف الى السلة
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-6">
+                    <div class="card-prodect">
+                      <div class="head-card">
+                        <h4>دينا فارم</h4>
+                        <i class="fa-regular fa-heart"></i>
+                      </div>
+                      <div class="img">
+                        <img src="img/card4.png" alt="" />
+                      </div>
+                      <div class="price-prodect">
+                        <h4>40.30 ر.س</h4>
+                        <div class="evaluation">
+                          <i class="fa-solid fa-star"></i>
+                          <p>4.0</p>
+                        </div>
+                      </div>
+                      <div class="discripe-product">
+                        <h4>
+                          كرتونة من المانجو معبأة بطريقة صحيحة للحفاظ عليها
+                        </h4>
+                        <p>
+                          50 جرام مانجو سيكو المواصفات نبات صيني بدون سكر عضوي
+                          مجمد
+                        </p>
+                      </div>
+                      <div class="btn-card">
+                        <button type="button" class="btn btn-success">
+                          <i class="fa-solid fa-cart-shopping"></i>
+                          أضف الى السلة
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-6">
+                    <div class="card-prodect">
+                      <div class="head-card">
+                        <h4>دينا فارم</h4>
+                        <i class="fa-regular fa-heart"></i>
+                      </div>
+                      <div class="img">
+                        <img src="img/card5.png" alt="" />
+                      </div>
+                      <div class="price-prodect">
+                        <h4>40.30 ر.س</h4>
+                        <div class="evaluation">
+                          <i class="fa-solid fa-star"></i>
+                          <p>4.0</p>
+                        </div>
+                      </div>
+                      <div class="discripe-product">
+                        <h4>
+                          كرتونة من المانجو معبأة بطريقة صحيحة للحفاظ عليها
+                        </h4>
+                        <p>
+                          50 جرام مانجو سيكو المواصفات نبات صيني بدون سكر عضوي
+                          مجمد
+                        </p>
+                      </div>
+                      <div class="btn-card">
+                        <button type="button" class="btn btn-success">
+                          <i class="fa-solid fa-cart-shopping"></i>
+                          أضف الى السلة
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="pagefour"
+                role="tabpanel"
+                aria-labelledby="pagefour-tab"
+              >
+                <div class="row">
+                  <div class="col-lg-3 col-md-4 col-6">
+                    <div class="card-prodect">
+                      <div class="head-card">
+                        <h4>دينا فارم</h4>
+                        <i class="fa-regular fa-heart"></i>
+                      </div>
+                      <div class="img">
+                        <img src="img/card2.png" alt="" />
+                      </div>
+                      <div class="price-prodect">
+                        <h4>40.30 ر.س</h4>
+                        <div class="evaluation">
+                          <i class="fa-solid fa-star"></i>
+                          <p>4.0</p>
+                        </div>
+                      </div>
+                      <div class="discripe-product">
+                        <h4>
+                          كرتونة من المانجو معبأة بطريقة صحيحة للحفاظ عليها
+                        </h4>
+                        <p>
+                          50 جرام مانجو سيكو المواصفات نبات صيني بدون سكر عضوي
+                          مجمد
+                        </p>
+                      </div>
+                      <div class="btn-card">
+                        <button type="button" class="btn btn-success">
+                          <i class="fa-solid fa-cart-shopping"></i>
+                          أضف الى السلة
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-6">
+                    <div class="card-prodect">
+                      <div class="head-card">
+                        <h4>دينا فارم</h4>
+                        <i class="fa-regular fa-heart"></i>
+                      </div>
+                      <div class="img">
+                        <img src="img/card3.png" alt="" />
+                      </div>
+                      <div class="price-prodect">
+                        <h4>40.30 ر.س</h4>
+                        <div class="evaluation">
+                          <i class="fa-solid fa-star"></i>
+                          <p>4.0</p>
+                        </div>
+                      </div>
+                      <div class="discripe-product">
+                        <h4>
+                          كرتونة من المانجو معبأة بطريقة صحيحة للحفاظ عليها
+                        </h4>
+                        <p>
+                          50 جرام مانجو سيكو المواصفات نبات صيني بدون سكر عضوي
+                          مجمد
+                        </p>
+                      </div>
+                      <div class="btn-card">
+                        <button type="button" class="btn btn-success">
+                          <i class="fa-solid fa-cart-shopping"></i>
+                          أضف الى السلة
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-6">
+                    <div class="card-prodect">
+                      <div class="head-card">
+                        <h4>دينا فارم</h4>
+                        <i class="fa-regular fa-heart"></i>
+                      </div>
+                      <div class="img">
+                        <img src="img/card4.png" alt="" />
+                      </div>
+                      <div class="price-prodect">
+                        <h4>40.30 ر.س</h4>
+                        <div class="evaluation">
+                          <i class="fa-solid fa-star"></i>
+                          <p>4.0</p>
+                        </div>
+                      </div>
+                      <div class="discripe-product">
+                        <h4>
+                          كرتونة من المانجو معبأة بطريقة صحيحة للحفاظ عليها
+                        </h4>
+                        <p>
+                          50 جرام مانجو سيكو المواصفات نبات صيني بدون سكر عضوي
+                          مجمد
+                        </p>
+                      </div>
+                      <div class="btn-card">
+                        <button type="button" class="btn btn-success">
+                          <i class="fa-solid fa-cart-shopping"></i>
+                          أضف الى السلة
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-6">
+                    <div class="card-prodect">
+                      <div class="head-card">
+                        <h4>دينا فارم</h4>
+                        <i class="fa-regular fa-heart"></i>
+                      </div>
+                      <div class="img">
+                        <img src="img/card5.png" alt="" />
+                      </div>
+                      <div class="price-prodect">
+                        <h4>40.30 ر.س</h4>
+                        <div class="evaluation">
+                          <i class="fa-solid fa-star"></i>
+                          <p>4.0</p>
+                        </div>
+                      </div>
+                      <div class="discripe-product">
+                        <h4>
+                          كرتونة من المانجو معبأة بطريقة صحيحة للحفاظ عليها
+                        </h4>
+                        <p>
+                          50 جرام مانجو سيكو المواصفات نبات صيني بدون سكر عضوي
+                          مجمد
+                        </p>
+                      </div>
+                      <div class="btn-card">
+                        <button type="button" class="btn btn-success">
+                          <i class="fa-solid fa-cart-shopping"></i>
+                          أضف الى السلة
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- products -->
+
+    <!-- Latest-news -->
+    <div class="Latest-news">
+      <div class="container">
+        <div class="row">
+          <div class="title-news">
+            <h1>أخر الأخبـــــــــــــار</h1>
+            <a href="#"> <h5>عرض الكل</h5></a>
+          </div>
+          <div class="col-lg-4 col-md-6 col-12">
+            <div class="card-new">
+              <div class="card-img">
+                <img src="img/news1.png" alt="" />
+                <div class="delivery">
+                  <h6>delivery</h6>
+                  <h6>buying</h6>
+                </div>
+              </div>
+              <div class="date-news">
+                <p>June 28, 2018</p>
+              </div>
+              <div class="details-news">
+                <h4>
+                  اعرف فائدة التسوق الالكترونى و احصل على كل طلباتك بسهولة
+                </h4>
+                <p>
+                  هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم
+                  توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا
+                  النص أو العديد من ال
+                </p>
+                <a href="#"> عرض المزيد </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-12">
+            <div class="card-new">
+              <div class="card-img">
+                <img src="img/news2.png" alt="" />
+                <div class="delivery">
+                  <h6>delivery</h6>
+                  <h6>buying</h6>
+                </div>
+              </div>
+              <div class="date-news">
+                <p>June 28, 2018</p>
+              </div>
+              <div class="details-news">
+                <h4>
+                  اعرف فائدة التسوق الالكترونى و احصل على كل طلباتك بسهولة
+                </h4>
+                <p>
+                  هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم
+                  توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا
+                  النص أو العديد من ال
+                </p>
+                <a href="#"> عرض المزيد </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-12">
+            <div class="card-new">
+              <div class="card-img">
+                <img src="img/news3.png" alt="" />
+                <div class="delivery">
+                  <h6>delivery</h6>
+                  <h6>buying</h6>
+                </div>
+              </div>
+              <div class="date-news">
+                <p>June 28, 2018</p>
+              </div>
+              <div class="details-news">
+                <h4>
+                  اعرف فائدة التسوق الالكترونى و احصل على كل طلباتك بسهولة
+                </h4>
+                <p>
+                  هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم
+                  توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا
+                  النص أو العديد من ال
+                </p>
+                <a href="#"> عرض المزيد </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Latest-news -->
+
+    <!-- Service-features -->
+    <div class="Service-features">
+      <div class="container">
+        <div class="row">
+          <div class="cards-srves">
+            <div class="row">
+              <div class="col-lg-3 col-md-4 col-6">
+                <div class="card-one">
+                  <img src="img/serves1.png" alt="" />
+                  <div class="details">
+                    <h4>سرعة التوصيل</h4>
+                    <p>لجميع الطلبات التي تزيد عن 150 SAR</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-4 col-6">
+                <div class="card-one">
+                  <img src="img/serves2.png" alt="" />
+                  <div class="details">
+                    <h4>سرعة التوصيل</h4>
+                    <p>لجميع الطلبات التي تزيد عن 150 SAR</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-4 col-6">
+                <div class="card-one">
+                  <img src="img/serves3.png" alt="" />
+                  <div class="details">
+                    <h4>سرعة التوصيل</h4>
+                    <p>لجميع الطلبات التي تزيد عن 150 SAR</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-4 col-6">
+                <div class="card-one">
+                  <img src="img/serves4.png" alt="" />
+                  <div class="details">
+                    <h4>سرعة التوصيل</h4>
+                    <p>لجميع الطلبات التي تزيد عن 150 SAR</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Service-features -->
+
+    <!-- footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 col-12">
+            <div class="social-media">
+              <img src="img/Group 48096984.png" alt="" />
+              <p>
+                موقع متخصص لبيع جميع المنتجات , منصة لبيع وشراء السلع سواء كانت
+                منتجات أو خدمات أو معلومات عبر شبكة الإنترنت.
+              </p>
+              <div class="ranking-icon">
+                <div class="icon">
+                  <i class="fa-brands fa-whatsapp"></i>
+                </div>
+                <div class="icon">
+                  <i class="fa-brands fa-twitter"></i>
+                </div>
+                <div class="icon">
+                  <i class="fa-brands fa-facebook"></i>
+                </div>
+                <div class="icon">
+                  <i class="fa-brands fa-linkedin"></i>
+                </div>
+                <div class="icon">
+                  <i class="fa-brands fa-youtube"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-12">
+            <div class="list-link">
+              <h4>روابط سريعة</h4>
+              <ul>
+                <li>سياسة الخصوصية والاستخدام</li>
+                <li>سياسة الاسترجاع</li>
+                <li>قصتنا</li>
+                <li>المدونة</li>
+                <li>تواصل معنا</li>
+                <li>الأسألة الشائعة</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-12">
+            <div class="list-comunication">
+              <h4>تواصل معنا</h4>
+              <ul>
+                <li>
+                  <i class="fa-solid fa-phone"></i>
+                  <p>547-526-8071</p>
+                </li>
+                <li>
+                  <i class="fa-regular fa-envelope"></i>
+                  <p>Reilly.Runolfsson@gmail.com</p>
+                </li>
+                <li>
+                  <i class="fa-brands fa-whatsapp"></i>
+                  <p>825-571-0899</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md col-12">
+            <div class="qrcode">
+              <h4>فحص QR Code</h4>
+              <img src="img/qr.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="payment-methods">
+            <h6>كل الحقوق محفوظة @ المتجر2023</h6>
+            <div class="img">
+              <img src="img/cash.png" alt="" />
+              <img src="img/cash2.png" alt="" />
+              <img src="img/cash3.png" alt="" />
+              <img src="img/cash4.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- footer -->
+
+    <script src="js/counterup.min.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/bootstrap-select.min.js"></script>
+    <script src="js/main.js"></script>
+    <!-- counter -->
+    <script src="js/counterup.min.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.js"></script>
+    <!-- counter -->
+
+    <!-- start slider1 -->
+    <script>
+      var swiper = new Swiper(".mySwiper1", {
+        slidesPerView: 4,
+        spaceBetween: 30,
+        loop: true,
+
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+
+        autoplay: {
+          delay: 2000,
+          disableoninteraction: false,
+        },
+
+        breakpoints: {
+          300: {
+            slidesPerView: 1,
+            spaceBetween: 80,
+          },
+          350: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+          },
+          768: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+          },
+          1024: {
+            slidesPerView: 1,
+            spaceBetween: 40,
+          },
+          1440: {
+            slidesPerView: 1,
+            spaceBetween: 40,
+          },
+        },
+      });
+    </script>
+    <!-- end slider1 -->
+    <!--  slider2 -->
+    <script>
+      var swiper = new Swiper(".mySwiper2", {
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+      var swiper = new Swiper(".mySwiper2", {
+        slidesPerView: 4,
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+
+        breakpoints: {
+          300: {
+            slidesPerView: 1,
+            spaceBetween: 80,
+          },
+          350: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+          },
+          768: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+          },
+          868: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+          },
+          1024: {
+            slidesPerView: 1,
+            spaceBetween: 40,
+          },
+          1224: {
+            slidesPerView: 1,
+            spaceBetween: 40,
+          },
+          1440: {
+            slidesPerView: 1,
+            spaceBetween: 40,
+          },
+        },
+      });
+    </script>
+    <!--slider2  -->
+  </body>
+</html>
