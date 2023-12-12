@@ -55,7 +55,7 @@
             aria-labelledby="offcanvasRightLabel"
           >
             <div class="offcanvas-header">
-              <h5 id="offcanvasRightLabel">Offcanvas right</h5>
+              <h5 id="offcanvasRightLabel">تحديد الموقع</h5>
               <button
                 type="button"
                 class="btn-close text-reset"
@@ -63,7 +63,23 @@
                 aria-label="Close"
               ></button>
             </div>
-            <div class="offcanvas-body">...</div>
+            <div class="offcanvas-body">
+              <form>
+                <div class="col-12">
+                  <button class="btn btn-outline-success" type="submit">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                  </button>
+                  <input
+                    class="form-control me-2"
+                    type="search"
+                    placeholder="ابحث عن موقعك الحالى ..."
+                    aria-label="Search"
+                  />
+                </div>
+              </form>
+              <img src="img/map.png" alt="" />
+              <button type="button" class="btn btn-success">تأكيد</button>
+            </div>
           </div>
           <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="#">EGP</a></li>
@@ -92,6 +108,7 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
+
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <form class="d-flex">
             <input
@@ -112,9 +129,16 @@
                 >تسجيل الدخول
               </a>
             </li>
+
             <li class="nav-item">
               <i class="fa-solid fa-cart-shopping"></i>
-              <a class="nav-link" href="#">السلة</a>
+              <a
+                data-bs-toggle="offcanvas"
+                href="#offcanvasExample"
+                role="button"
+                aria-controls="offcanvasExample"
+                >السلة</a
+              >
             </li>
             <li class="nav-item">
               <i class="fa-regular fa-heart"></i>
@@ -124,6 +148,38 @@
         </div>
       </div>
     </nav>
+
+    <!-- offcanvas2 -->
+    <div
+      class="offcanvas offcanvas-start"
+      tabindex="-1"
+      id="offcanvasExample"
+      aria-labelledby="offcanvasExampleLabel"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel">السلة</h5>
+        <button
+          type="button"
+          class="btn-close text-reset"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <div>
+          <div class="contant">
+            <img src="img/carmarket.png" alt="" />
+            <h4>سلة المشتريات فارغة</h4>
+            <a href="#"
+              ><button type="button" class="btn btn-success">
+                استكمال التسوق
+              </button></a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- offcanvas2 -->
 
     <!-- navbar one-->
 
@@ -1667,13 +1723,13 @@
     </div>
     <!-- products -->
 
-    <!-- Latest-news -->
+    <!-- Last-news -->
     <div class="Latest-news">
       <div class="container">
         <div class="row">
           <div class="title-news">
             <h1>أخر الأخبـــــــــــــار</h1>
-            <a href="#"> <h5>عرض الكل</h5></a>
+            <a href="blog.html"> <h5>عرض الكل</h5></a>
           </div>
           <div class="col-lg-4 col-md-6 col-12">
             <div class="card-new">
@@ -1696,7 +1752,7 @@
                   توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا
                   النص أو العديد من ال
                 </p>
-                <a href="#"> عرض المزيد </a>
+                <a href="News-details.html"> عرض المزيد </a>
               </div>
             </div>
           </div>
@@ -1721,7 +1777,7 @@
                   توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا
                   النص أو العديد من ال
                 </p>
-                <a href="#"> عرض المزيد </a>
+                <a href="News-details.html"> عرض المزيد </a>
               </div>
             </div>
           </div>
@@ -1746,14 +1802,14 @@
                   توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا
                   النص أو العديد من ال
                 </p>
-                <a href="#"> عرض المزيد </a>
+                <a href="News-details.html"> عرض المزيد </a>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- Latest-news -->
+    <!-- Last-news -->
 
     <!-- Service-features -->
     <div class="Service-features">
@@ -1817,19 +1873,19 @@
               </p>
               <div class="ranking-icon">
                 <div class="icon">
-                  <i class="fa-brands fa-whatsapp"></i>
+                  <a href=""> <i class="fa-brands fa-whatsapp"></i> </a>
                 </div>
                 <div class="icon">
-                  <i class="fa-brands fa-twitter"></i>
+                  <a href=""><i class="fa-brands fa-twitter"></i></a>
                 </div>
                 <div class="icon">
-                  <i class="fa-brands fa-facebook"></i>
+                  <a href=""><i class="fa-brands fa-facebook"></i></a>
                 </div>
                 <div class="icon">
-                  <i class="fa-brands fa-linkedin"></i>
+                  <a href=""><i class="fa-brands fa-linkedin"></i></a>
                 </div>
                 <div class="icon">
-                  <i class="fa-brands fa-youtube"></i>
+                  <a href=""><i class="fa-brands fa-youtube"></i></a>
                 </div>
               </div>
             </div>
@@ -1838,12 +1894,14 @@
             <div class="list-link">
               <h4>روابط سريعة</h4>
               <ul>
-                <li>سياسة الخصوصية والاستخدام</li>
-                <li>سياسة الاسترجاع</li>
-                <li>قصتنا</li>
-                <li>المدونة</li>
-                <li>تواصل معنا</li>
-                <li>الأسألة الشائعة</li>
+                <a href="Privacy-policy.html"
+                  ><li>سياسة الخصوصية والاستخدام</li></a
+                >
+                <a href="policy.html"> <li>سياسة الاسترجاع</li></a>
+                <a href="story.html"><li>قصتنا</li></a>
+                <a href="blog.html"> <li>المدونة</li></a>
+                <a href="Connect-with-us.html"><li>تواصل معنا</li></a>
+                <a href="common-questions.html"> <li>الأسألة الشائعة</li></a>
               </ul>
             </div>
           </div>
@@ -1851,18 +1909,24 @@
             <div class="list-comunication">
               <h4>تواصل معنا</h4>
               <ul>
-                <li>
-                  <i class="fa-solid fa-phone"></i>
-                  <p>547-526-8071</p>
-                </li>
-                <li>
-                  <i class="fa-regular fa-envelope"></i>
-                  <p>Reilly.Runolfsson@gmail.com</p>
-                </li>
-                <li>
-                  <i class="fa-brands fa-whatsapp"></i>
-                  <p>825-571-0899</p>
-                </li>
+                <a href="#">
+                  <li>
+                    <i class="fa-solid fa-phone"></i>
+                    <p>547-526-8071</p>
+                  </li></a
+                >
+                <a href="#">
+                  <li>
+                    <i class="fa-regular fa-envelope"></i>
+                    <p>Reilly.Runolfsson@gmail.com</p>
+                  </li></a
+                >
+                <a href="#">
+                  <li>
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <p>825-571-0899</p>
+                  </li></a
+                >
               </ul>
             </div>
           </div>

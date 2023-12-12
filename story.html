@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>HyperStore story</title>
+    <!-- ? Favicon img -->
+    <link rel="icon" href="img/Group 48096984.png" type="image" />
+    <!-- ? Favicon img-->
+
+    <!-- ? Main CSS -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/fontawesome.min.css" />
+    <!-- ? Custom CSS -->
+    <link rel="stylesheet" href="css/dataTables.bootstrap5.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <!-- ? Custom CSS -->
+    <!-- ? Main JavaScript -->
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/fontawesome.min.js"></script>
+    <!-- ? Main JavaScript -->
+    <!-- ? Custom JavaScript -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="js/charts.js"></script>
+    <script src="js/jquery.dataTables.min.js"></script>
+    <script src="js/dataTables.bootstrap5.min.js"></script>
+    <!-- ? Custom JavaScript -->
+  </head>
+  <body>
+    <!-- breadcrumb -->
+    <nav aria-label="breadcrumb" class="nav-breadcrumb">
+      <div class="container">
+        <div class="all-breadcrumb">
+          <button
+            class="btn btn-link"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasRight"
+            aria-controls="offcanvasRight"
+          >
+            <img src="img/car.png" alt="" />
+            <p>التوصيل الي <span>حدد موقعك</span></p>
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasRight"
+            aria-labelledby="offcanvasRightLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 id="offcanvasRightLabel">تحديد الموقع</h5>
+              <button
+                type="button"
+                class="btn-close text-reset"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <form>
+                <div class="col-12">
+                  <button class="btn btn-outline-success" type="submit">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                  </button>
+                  <input
+                    class="form-control me-2"
+                    type="search"
+                    placeholder="ابحث عن موقعك الحالى ..."
+                    aria-label="Search"
+                  />
+                </div>
+              </form>
+              <img src="img/map.png" alt="" />
+              <button type="button" class="btn btn-success">تأكيد</button>
+            </div>
+          </div>
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">EGP</a></li>
+            <li class="breadcrumb-item">
+              <a href="#">English <img src="img/amirica.png" alt="" /></a>
+            </li>
+            <li class="breadcrumb-item"><a href="#">اتصل 16666</a></li>
+          </ol>
+        </div>
+      </div>
+    </nav>
+    <!-- breadcrumb -->
+
+    <!-- navbar one-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <img src="img/Group 48096984.png" alt="" />
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <form class="d-flex">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="ابحث باسم المنتج ...."
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </form>
+
+          <ul class="navbar-nav me-5 mb-2 mb-lg-0">
+            <li class="nav-item">
+              <i class="fa-regular fa-circle-user"></i>
+              <a class="nav-link active" aria-current="page" href="#"
+                >تسجيل الدخول
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <i class="fa-solid fa-cart-shopping"></i>
+              <a
+                data-bs-toggle="offcanvas"
+                href="#offcanvasExample"
+                role="button"
+                aria-controls="offcanvasExample"
+                >السلة</a
+              >
+            </li>
+            <li class="nav-item">
+              <i class="fa-regular fa-heart"></i>
+              <a class="nav-link" href="#">قائمة المفضلات</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- offcanvas2 -->
+    <div
+      class="offcanvas offcanvas-start"
+      tabindex="-1"
+      id="offcanvasExample"
+      aria-labelledby="offcanvasExampleLabel"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel">السلة</h5>
+        <button
+          type="button"
+          class="btn-close text-reset"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <div>
+          <div class="contant">
+            <img src="img/carmarket.png" alt="" />
+            <h4>سلة المشتريات فارغة</h4>
+            <a href="#"
+              ><button type="button" class="btn btn-success">
+                استكمال التسوق
+              </button></a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- offcanvas2 -->
+
+    <!-- navbar one-->
+
+    <!-- story -->
+    <header>
+      <div class="container">
+        <div class="row">
+          <div class="head-story">
+            <h6>الرئيسية <i class="fa-solid fa-chevron-right"></i> قصتنا</h6>
+            <h4>معلومات حول اسم الشركة</h4>
+            <p>
+              هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد
+              هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو
+              العديد من النصوص الأخرى إضافة ...هذا النص هو مثال لنص يمكن
+            </p>
+          </div>
+
+          <div class="body-story">
+            <div class="row">
+              <div class="col-lg-3 col-md-3 col-6">
+                <div class="story-img">
+                  <img src="img/mobile1.png" alt="" />
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-3 col-6">
+                <div class="story-img-two">
+                  <img src="img/mobile2.png" alt="" />
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-3 col-6">
+                <div class="story-img">
+                  <img src="img/mobile3.png" alt="" />
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-3 col-6">
+                <div class="story-img-two">
+                  <img src="img/mobile4.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <p>
+              هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد
+              هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو
+              العديد من النصوص الأخرى إضافة ...هذا النص هو مثال لنص يمكن أن
+              يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى،
+              حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة
+              ...هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم
+              توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص
+              أو العديد من النصوص الأخرى إضافة ... هذا النص هو مثال لنص يمكن أن
+              يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى،
+              حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة
+              ...هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم
+              توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص
+              أو العديد من النصوص الأخرى إضافة ...
+            </p>
+
+            <p>
+              هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد
+              هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو
+              العديد من النصوص الأخرى إضافة ... هذا النص هو مثال لنص يمكن أن
+              يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى،
+              حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة
+              ...
+            </p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- story -->
+
+    <!-- Service-features -->
+    <div class="Service-features">
+      <div class="container">
+        <div class="row">
+          <div class="cards-srves">
+            <div class="row">
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="card-one">
+                  <img src="img/serves1.png" alt="" />
+                  <div class="details">
+                    <h4>سرعة التوصيل</h4>
+                    <p>لجميع الطلبات التي تزيد عن 150 SAR</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="card-one">
+                  <img src="img/serves2.png" alt="" />
+                  <div class="details">
+                    <h4>سرعة التوصيل</h4>
+                    <p>لجميع الطلبات التي تزيد عن 150 SAR</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="card-one">
+                  <img src="img/serves3.png" alt="" />
+                  <div class="details">
+                    <h4>سرعة التوصيل</h4>
+                    <p>لجميع الطلبات التي تزيد عن 150 SAR</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="card-one">
+                  <img src="img/serves4.png" alt="" />
+                  <div class="details">
+                    <h4>سرعة التوصيل</h4>
+                    <p>لجميع الطلبات التي تزيد عن 150 SAR</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Service-features -->
+
+    <!-- footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 col-12">
+            <div class="social-media">
+              <img src="img/Group 48096984.png" alt="" />
+              <p>
+                موقع متخصص لبيع جميع المنتجات , منصة لبيع وشراء السلع سواء كانت
+                منتجات أو خدمات أو معلومات عبر شبكة الإنترنت.
+              </p>
+              <div class="ranking-icon">
+                <div class="icon">
+                  <a href=""> <i class="fa-brands fa-whatsapp"></i> </a>
+                </div>
+                <div class="icon">
+                  <a href=""><i class="fa-brands fa-twitter"></i></a>
+                </div>
+                <div class="icon">
+                  <a href=""><i class="fa-brands fa-facebook"></i></a>
+                </div>
+                <div class="icon">
+                  <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <div class="icon">
+                  <a href=""><i class="fa-brands fa-youtube"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-12">
+            <div class="list-link">
+              <h4>روابط سريعة</h4>
+              <ul>
+                <a href="Privacy-policy.html"
+                  ><li>سياسة الخصوصية والاستخدام</li></a
+                >
+                <a href="policy.html"> <li>سياسة الاسترجاع</li></a>
+                <a href="story.html"><li>قصتنا</li></a>
+                <a href="blog.html"> <li>المدونة</li></a>
+                <a href="Connect-with-us.html"><li>تواصل معنا</li></a>
+                <a href="common-questions.html"> <li>الأسألة الشائعة</li></a>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-12">
+            <div class="list-comunication">
+              <h4>تواصل معنا</h4>
+              <ul>
+                <a href="#">
+                  <li>
+                    <i class="fa-solid fa-phone"></i>
+                    <p>547-526-8071</p>
+                  </li></a
+                >
+                <a href="#">
+                  <li>
+                    <i class="fa-regular fa-envelope"></i>
+                    <p>Reilly.Runolfsson@gmail.com</p>
+                  </li></a
+                >
+                <a href="#">
+                  <li>
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <p>825-571-0899</p>
+                  </li></a
+                >
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md col-12">
+            <div class="qrcode">
+              <h4>فحص QR Code</h4>
+              <img src="img/qr.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="payment-methods">
+            <h6>كل الحقوق محفوظة @ المتجر2023</h6>
+            <div class="img">
+              <img src="img/cash.png" alt="" />
+              <img src="img/cash2.png" alt="" />
+              <img src="img/cash3.png" alt="" />
+              <img src="img/cash4.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- footer -->
+
+    <script src="js/counterup.min.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/bootstrap-select.min.js"></script>
+    <script src="js/main.js"></script>
+    <!-- counter -->
+    <script src="js/counterup.min.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.js"></script>
+    <!-- counter -->
+  </body>
+</html>
