@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>HyperStore story</title>
+    <!-- ? Favicon img -->
+    <link rel="icon" href="img/Group 48096984.png" type="image" />
+    <!-- ? Favicon img-->
+
+    <!-- ? Main CSS -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/fontawesome.min.css" />
+    <!-- ? Custom CSS -->
+    <link rel="stylesheet" href="css/dataTables.bootstrap5.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <!-- ? Custom CSS -->
+    <!-- ? Main JavaScript -->
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/fontawesome.min.js"></script>
+    <!-- ? Main JavaScript -->
+    <!-- ? Custom JavaScript -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="js/charts.js"></script>
+    <script src="js/jquery.dataTables.min.js"></script>
+    <script src="js/dataTables.bootstrap5.min.js"></script>
+    <!-- ? Custom JavaScript -->
+  </head>
+  <body>
+    <!-- breadcrumb -->
+    <nav aria-label="breadcrumb" class="nav-breadcrumb">
+      <div class="container">
+        <div class="all-breadcrumb">
+          <button
+            class="btn btn-link"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasRight"
+            aria-controls="offcanvasRight"
+          >
+            <img src="img/car.png" alt="" />
+            <p>التوصيل الي <span>حدد موقعك</span></p>
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasRight"
+            aria-labelledby="offcanvasRightLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 id="offcanvasRightLabel">تحديد الموقع</h5>
+              <button
+                type="button"
+                class="btn-close text-reset"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <form>
+                <div class="col-12">
+                  <button class="btn btn-outline-success" type="submit">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                  </button>
+                  <input
+                    class="form-control me-2"
+                    type="search"
+                    placeholder="ابحث عن موقعك الحالى ..."
+                    aria-label="Search"
+                  />
+                </div>
+              </form>
+              <img src="img/map.png" alt="" />
+              <button type="button" class="btn btn-success">تأكيد</button>
+            </div>
+          </div>
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">EGP</a></li>
+            <li class="breadcrumb-item">
+              <a href="#">English <img src="img/amirica.png" alt="" /></a>
+            </li>
+            <li class="breadcrumb-item"><a href="#">اتصل 16666</a></li>
+          </ol>
+        </div>
+      </div>
+    </nav>
+    <!-- breadcrumb -->
+
+    <!-- navbar one-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <img src="img/Group 48096984.png" alt="" />
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <form class="d-flex">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="ابحث باسم المنتج ...."
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </form>
+
+          <ul class="navbar-nav me-5 mb-2 mb-lg-0">
+            <li class="nav-item">
+              <i class="fa-regular fa-circle-user"></i>
+              <a class="nav-link active" aria-current="page" href="#"
+                >تسجيل الدخول
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <i class="fa-solid fa-cart-shopping"></i>
+              <a
+                data-bs-toggle="offcanvas"
+                href="#offcanvasExample"
+                role="button"
+                aria-controls="offcanvasExample"
+                >السلة</a
+              >
+            </li>
+            <li class="nav-item">
+              <i class="fa-regular fa-heart"></i>
+              <a class="nav-link" href="#">قائمة المفضلات</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- offcanvas2 -->
+    <div
+      class="offcanvas offcanvas-start"
+      tabindex="-1"
+      id="offcanvasExample"
+      aria-labelledby="offcanvasExampleLabel"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel">السلة</h5>
+        <button
+          type="button"
+          class="btn-close text-reset"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <div>
+          <div class="contant">
+            <img src="img/carmarket.png" alt="" />
+            <h4>سلة المشتريات فارغة</h4>
+            <a href="#"
+              ><button type="button" class="btn btn-success">
+                استكمال التسوق
+              </button></a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- offcanvas2 -->
+
+    <!-- navbar one-->
+
+    <!-- Shopping basket -->
+    <div class="Shopping-basket">
+      <div class="container">
+        <div class="row">
+          <div class="head-basket">
+            <h6>
+              الرئيسية <i class="fa-solid fa-chevron-right"></i> سلة التسوق
+            </h6>
+          </div>
+          <div class="col-lg-8 col-md-12 col-12">
+            <div class="all-prodect">
+              <div class="offer">
+                <h6>احصل على الشحن المجانى عند شراءك بقيمة 200 SAR</h6>
+              </div>
+              <div class="Delivery">
+                <h6>
+                  <img src="img/car.png" alt="" />
+                  التوصيل الي RHOC3233، 3233 طريق العروبة، 8334، الرحمانية،
+                  الرياض 12333، السعودية
+                </h6>
+                <h6>تغيير العنوان <i class="fa-solid fa-chevron-left"></i></h6>
+              </div>
+              <div class="products-shopping">
+                <h5>كل المنتجات (2)</h5>
+                <div class="prodect border-bottom">
+                  <div class="img-prodect">
+                    <img src="img/allprodect.png" alt="" />
+                  </div>
+                  <div class="details-prodect">
+                    <h5>كرتونة من المانجو معبأة بطريقة صحيحة للحفاظ عليها</h5>
+                    <h6>40.30 ر.س</h6>
+                  </div>
+                  <div class="counter">
+                    <i class="fa-solid fa-minus"></i>
+                    <h6>01</h6>
+                    <i class="fa-solid fa-plus"></i>
+                  </div>
+                  <div class="price-prodect">
+                    <h6>المجموع 80.30 ر.س</h6>
+                  </div>
+                  <div class="delet-product">
+                    <i class="fa-solid fa-xmark"></i>
+                  </div>
+                </div>
+                <div class="prodect">
+                  <div class="img-prodect">
+                    <img src="img/allprodect.png" alt="" />
+                  </div>
+                  <div class="details-prodect">
+                    <h5>كرتونة من المانجو معبأة بطريقة صحيحة للحفاظ عليها</h5>
+                    <h6>40.30 ر.س</h6>
+                  </div>
+                  <div class="counter">
+                    <i class="fa-solid fa-minus"></i>
+                    <h6>01</h6>
+                    <i class="fa-solid fa-plus"></i>
+                  </div>
+                  <div class="price-prodect">
+                    <h6>المجموع 80.30 ر.س</h6>
+                  </div>
+                  <div class="delet-product">
+                    <i class="fa-solid fa-xmark"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-12">
+            <div class="Order-summary">
+              <div class="row">
+                <div class="summary">
+                  <h6>ملخص الطلب</h6>
+                  <div class="coopon">
+                    <p>لديك كوبون خصم</p>
+                    <button type="button" class="btn btn-success">تطبيق</button>
+                  </div>
+                  <div class="details-price">
+                    <div class="price">
+                      <h6>سعر المنتجات</h6>
+                      <h5>80.65 SAR</h5>
+                    </div>
+                    <div class="price">
+                      <h6>سعر التوصيل</h6>
+                      <h5>20 SAR</h5>
+                    </div>
+                    <div class="price border-bottom">
+                      <h6>ضريبة</h6>
+                      <h5><span>-5 SAR</span></h5>
+                    </div>
+                    <div class="price">
+                      <h6>اجمالى السعر</h6>
+                      <h5>100.39 SAR</h5>
+                    </div>
+                    <button type="button" class="btn btn-success">
+                      تأكيد الشراء
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Shopping basket -->
+
+    <script src="js/counterup.min.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/bootstrap-select.min.js"></script>
+    <script src="js/main.js"></script>
+    <!-- counter -->
+    <script src="js/counterup.min.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.js"></script>
+    <!-- counter -->
+  </body>
+</html>

@@ -17,6 +17,9 @@
     <!-- ? Custom CSS -->
     <link rel="stylesheet" href="css/dataTables.bootstrap5.min.css" />
     <link rel="stylesheet" href="css/main.css" />
+    <!--  -->
+    <link href="dist/toasty.min.css" rel="stylesheet" />
+    <!--  -->
     <!-- ? Custom CSS -->
     <!-- ? Main JavaScript -->
 
@@ -124,12 +127,78 @@
 
           <ul class="navbar-nav me-5 mb-2 mb-lg-0">
             <li class="nav-item">
-              <i class="fa-regular fa-circle-user"></i>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
+                تسجيل الدخول
+              </button>
+              <!-- <i class="fa-regular fa-circle-user"></i>
               <a class="nav-link active" aria-current="page" href="#"
                 >تسجيل الدخول
-              </a>
+              </a> -->
             </li>
 
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="exampleModal"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <!-- <h5 class="modal-title" id="exampleModalLabel">
+                      تسجيل الدخول
+                      <p>من فضلك قمك بتسجيل الدخول لاستكمال عملية الشراء</p>
+                    </h5> -->
+                    <div class="modal-title">
+                      <h5>تسجيل الدخول</h5>
+                      <p>من فضلك قمك بتسجيل الدخول لاستكمال عملية الشراء</p>
+                    </div>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <form>
+                      <div class="col-12">
+                        <label for="formGroupExampleInput"
+                          >رقم الهاتف او البريد الالكترونى</label
+                        >
+                        <input
+                          type="number"
+                          class="form-control"
+                          placeholder="Last name"
+                        />
+                        <button type="button" class="btn btn-success">
+                          تسجيل الدخول
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                    <button type="button" class="btn btn-primary">
+                      Save changes
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
             <li class="nav-item">
               <i class="fa-solid fa-cart-shopping"></i>
               <a
@@ -158,16 +227,22 @@
     >
       <div class="offcanvas-header">
         <h5 class="offcanvas-title" id="offcanvasExampleLabel">السلة</h5>
-        <button
-          type="button"
-          class="btn-close text-reset"
-          data-bs-dismiss="offcanvas"
-          aria-label="Close"
-        ></button>
+        <div class="close">
+          <a href="Shopping-basket.html">
+            <i class="fa-solid fa-up-right-and-down-left-from-center"></i
+          ></a>
+          <button
+            type="button"
+            class="btn-close text-reset"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
       </div>
       <div class="offcanvas-body">
         <div>
-          <div class="contant">
+          <!-- سلة المشتريات فارغة -->
+          <!-- <div class="contant">
             <img src="img/carmarket.png" alt="" />
             <h4>سلة المشتريات فارغة</h4>
             <a href="#"
@@ -175,7 +250,74 @@
                 استكمال التسوق
               </button></a
             >
+          </div> -->
+          <div class="All-products">
+            <h6>كل المنتجات (2)</h6>
+            <div class="row">
+              <div class="products">
+                <div class="img-prodect">
+                  <img src="img/allprodect.png" alt="" />
+                </div>
+                <div class="contant-products">
+                  <h6>كرتونة من المانجو معبأة بطريقة صحيحة للحفاظ عليها</h6>
+                  <p>50 جرام مانجو سيكو المواصفات نبات صيني بدون سكر مج.....</p>
+                  <h6><span>40.30 ر.س</span></h6>
+                </div>
+                <div class="add-products">
+                  <i class="fa-solid fa-xmark"></i>
+                  <div class="more-products">
+                    <div class="less">
+                      <i class="fa-solid fa-minus"></i>
+                    </div>
+                    <div class="num"><p>01</p></div>
+                    <div class="more"><i class="fa-solid fa-plus"></i></div>
+                  </div>
+                </div>
+              </div>
+              <div class="products">
+                <div class="img-prodect">
+                  <img src="img/allprodect.png" alt="" />
+                </div>
+                <div class="contant-products">
+                  <h6>كرتونة من المانجو معبأة بطريقة صحيحة للحفاظ عليها</h6>
+                  <p>50 جرام مانجو سيكو المواصفات نبات صيني بدون سكر مج.....</p>
+                  <h6><span>40.30 ر.س</span></h6>
+                </div>
+                <div class="add-products">
+                  <i class="fa-solid fa-xmark"></i>
+                  <div class="more-products">
+                    <div class="less">
+                      <i class="fa-solid fa-minus"></i>
+                    </div>
+                    <div class="num"><p>01</p></div>
+                    <div class="more"><i class="fa-solid fa-plus"></i></div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
+          <div class="details-price">
+            <div class="row">
+              <h4>تفاصيل السعر</h4>
+              <div class="price">
+                <h6>سعر المنتجات</h6>
+                <h5>80.65 SAR</h5>
+              </div>
+              <div class="price">
+                <h6>سعر التوصيل <span>( لم يحدد بعد )</span></h6>
+                <h5>تحديد العنوان</h5>
+              </div>
+              <div class="price border-bottom">
+                <h6>اجمالى السعر</h6>
+                <h5><span>-5 SAR</span></h5>
+              </div>
+            </div>
+          </div>
+          <div class="discount-coupon">
+            <h6>لديك كوبون خصم</h6>
+            <i class="fa-solid fa-chevron-left"></i>
+          </div>
+          <button type="button" class="btn btn-success">تأكيد الشراء</button>
         </div>
       </div>
     </div>
@@ -1968,6 +2110,9 @@
     <script src="js/counterup.min.js"></script>
     <script src="js/waypoints.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.js"></script>
+    <!--  -->
+    <script src="dist/toasty.min.js"></script>
+    <!--  -->
     <!-- counter -->
 
     <!-- start slider1 -->
@@ -2073,5 +2218,15 @@
       });
     </script>
     <!--slider2  -->
+
+    <!--  -->
+    <script>
+      // put this right in your main.js file:
+      var toast = new Toasty();
+
+      // this show an informational message:
+      toast.info("Here is some information!");
+    </script>
+    <!--  -->
   </body>
 </html>
